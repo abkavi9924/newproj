@@ -17,7 +17,7 @@ It allows placing different types of orders from the command line with proper:
 ---
 
 ## Project Structure
-
+```bash
 trading_bot/
 │
 ├── bot/
@@ -31,11 +31,8 @@ trading_bot/
 ├── requirements.txt
 ├── README.md
 └── trading_bot.log # Generated after running orders
-
-
-
+```
 ---
-
 ## Prerequisites
 
 - Python 3.8 or higher  
@@ -120,45 +117,45 @@ trading_bot.log
 
 ### Log files are required for submission:
 
-#### One Market order
+#### 1. One Market order
 
-#### One Limit order
+#### 2. One Limit order
 
-#### Validation & Error Handling
+#### 3. Validation & Error Handling
 
 ### Input validation includes:
 
-#### Order side must be BUY or SELL
+#### 1. Order side must be BUY or SELL
 
-#### Order type must be MARKET, LIMIT, or STOP_LIMIT
+#### 2. Order type must be MARKET, LIMIT, or STOP_LIMIT
 
-#### Quantity must be greater than zero
+#### 3. Quantity must be greater than zero
 
-#### Price is required for LIMIT and STOP_LIMIT
+#### 4. Price is required for LIMIT and STOP_LIMIT
 
-#### Stop price is required for STOP_LIMIT
+#### 5. Stop price is required for STOP_LIMIT
 
 ### Handled errors:
 
-#### Invalid user input
+#### 1. Invalid user input
 
-#### inance API errors
+#### 2. Binance API errors
 
-#### Network or connection failures
+#### 3. Network or connection failures
 
 ### Assumptions
 
-#### Uses Binance USDT-M Futures Testnet
+#### 1. Uses Binance USDT-M Futures Testnet
 
-#### Only basic order placement (no leverage or margin configuration)
+#### 2. Only basic order placement (no leverage or margin configuration)
 
-#### Symbols like BTCUSDT and ETHUSDT are available
+#### 3. Symbols like BTCUSDT and ETHUSDT are available
 
-#### Minimum order notional is enforced by Binance (>= 100 USDT)
+#### 4. Minimum order notional is enforced by Binance (>= 100 USDT)
 
 ### Bonus Feature Implemented
 
-#### Stop-Limit order support
+#### 1. Stop-Limit order support
 
 ####Modular project structure
 
