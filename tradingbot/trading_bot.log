@@ -1,0 +1,23 @@
+2026-02-17 18:01:29,979 - INFO - Request: BTCUSDT BUY MARKET 0.001 None
+2026-02-17 18:01:30,883 - INFO - Response: {}
+2026-02-17 18:03:59,814 - INFO - Request: BTCUSDT BUY STOP_LIMIT 0.001 30000.0 29500.0
+2026-02-17 18:04:00,598 - INFO - Response: {}
+2026-02-17 18:05:25,499 - INFO - Request: BTCUSDT BUY MARKET 0.001 None None
+2026-02-17 18:05:26,380 - INFO - Response: {}
+2026-02-17 18:06:16,990 - INFO - Request: BTCUSDT BUY STOP_LIMIT 0.001 30000.0 29500.0
+2026-02-17 18:06:17,508 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-17 18:07:25,609 - INFO - Request: BTCUSDT BUY STOP_LIMIT 0.001 30000.0 29500.0
+2026-02-17 18:07:26,103 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-17 18:07:44,038 - INFO - Request: BTCUSDT BUY STOP_LIMIT 0.001 30000.0 29500.0
+2026-02-17 18:07:44,483 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-17 18:08:37,074 - INFO - Request: BTCUSDT BUY STOP_LIMIT 0.001 30000.0 29500.0
+2026-02-17 18:08:37,589 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-17 18:11:08,516 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-17 18:11:29,595 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-17 18:11:52,563 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-17 18:14:49,563 - INFO - Request: BTCUSDT BUY MARKET 0.001 None None
+2026-02-17 18:14:49,715 - ERROR - APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-17 18:15:08,497 - INFO - Request: BTCUSDT BUY STOP_LIMIT 0.001 30000.0 29500.0
+2026-02-17 18:15:08,628 - ERROR - APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-17 18:15:42,957 - INFO - Request: BTCUSDT BUY LIMIT 0.002 50000.0 None
+2026-02-17 18:15:43,129 - INFO - Response: {'orderId': 12339017954, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJf44ce90080630b8f25bc2a', 'price': '50000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771332342639}
