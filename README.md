@@ -157,8 +157,8 @@ trading_bot.log
 
 #### 1. Stop-Limit order support
 
-####Modular project structure
+#### 2. Modular project structure
 
-####CLI-based interaction
+#### 3. CLI-based interaction
 
-####Structured logging
+#### 4. Structured logging
