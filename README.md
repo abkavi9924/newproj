@@ -56,20 +56,23 @@ API keys must be generated from Binance Futures Testnet, not from main Binance.
 ```bash
 git clone <https://github.com/abkavi9924/newproj>
 cd trading_bot
+```
 
 
 #2. Create virtual environment (optional but recommended)
+```bash
 python -m venv venv
 venv\Scripts\activate        # Windows
 source venv/bin/activate    # Linux / Mac
-
+```
 #3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 #4. Create .env file
-
-#In the project root directory, create a file named .env and add:
-
+##In the project root directory, create a file named .env and add:
+```bash
 BINANCE_API_KEY=your_testnet_api_key
 BINANCE_API_SECRET=your_testnet_api_secret
 ```
@@ -79,15 +82,20 @@ BINANCE_API_SECRET=your_testnet_api_secret
 ###Market Order
 ```bash
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
+```
 
 ###Limit Order
+```bash
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 50000
+```
 
 ###Stop-Limit Order (Bonus)
+```bash
 python cli.py --symbol BTCUSDT --side BUY --type STOP_LIMIT --quantity 0.002 --price 50000 --stop_price 49500
-
+```
 ###Example Output
 Order Request Summary:
+```bash
 {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
 
 Order Response:
@@ -96,7 +104,7 @@ Status: FILLED
 Executed Qty: 0.002
 Avg Price: 49875.2
 SUCCESS
-
+```
 ###Logging
 
 ###All API requests, responses, and errors are logged in:
@@ -105,10 +113,10 @@ trading_bot.log
 
 
 ###Example log:
-
+```bash
 2026-02-17 18:04:00,598 - INFO - Request: BTCUSDT BUY MARKET 0.002
 2026-02-17 18:04:01,012 - INFO - Response: {...}
-
+```
 
 ###Log files are required for submission:
 
@@ -120,19 +128,19 @@ trading_bot.log
 
 ###Input validation includes:
 
-###Order side must be BUY or SELL
+####Order side must be BUY or SELL
 
-###Order type must be MARKET, LIMIT, or STOP_LIMIT
+####Order type must be MARKET, LIMIT, or STOP_LIMIT
 
-###Quantity must be greater than zero
+####Quantity must be greater than zero
 
-###Price is required for LIMIT and STOP_LIMIT
+####Price is required for LIMIT and STOP_LIMIT
 
-###Stop price is required for STOP_LIMIT
+####Stop price is required for STOP_LIMIT
 
 ###Handled errors:
 
-##Invalid user input
+####Invalid user input
 
 ####inance API errors
 
